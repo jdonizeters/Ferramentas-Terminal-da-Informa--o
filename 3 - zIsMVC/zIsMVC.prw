@@ -16,7 +16,11 @@ Função que verifica se a função executada atualmente é em MVC
     Return
     ...
 /*/
- 
+
+User Function AfterLogin()
+    SetKey(K_SH_F7,  { || u_zIsMVC() })     //Shift + F7
+Return
+
 User Function zIsMVC()
     Local lMVC        := .F.
     Local oModelPad   := FWModelActive()
